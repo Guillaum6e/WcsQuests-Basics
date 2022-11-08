@@ -2,7 +2,7 @@
 
 session_start();
 
-if(!isset($_SESSION["name"]) || is_null($_SESSION["name"])){
+if (!isset($_SESSION["name"]) || is_null($_SESSION["name"])) {
     header("Location: /login.php");
 }
 
@@ -35,10 +35,10 @@ require "inc/data/products.php";
         <ul>
             <?php foreach ($cart as $id => $quantity) : ?>
                 <li>
-                    <?= $quantity . " " . $catalog[$id]["name"] ?>
-                    <a href="/cart.php?plus=<?= $id ?>">+ </a> 
-                    <a href="/cart.php?minus=<?= $id ?>"> - </a> 
-                    <a href="/cart.php?delete=<?= $id ?>"> x</a>
+                    <?php echo $quantity . " " . $catalog[$id]["name"] ?>
+                    <a href="/cart.php?plus=<?php echo $id ?>">+ </a> 
+                    <a href="/cart.php?minus=<?php echo $id ?>"> - </a> 
+                    <a href="/cart.php?delete=<?php echo $id ?>"> x</a>
                 </li>
             <?php endforeach ?>
         </ul>

@@ -1,0 +1,17 @@
+{
+    "name": "grosg/composer3",
+    "autoload": {
+        "psr-4": {
+            "Grosg\\Composer3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GUILLAUME GROS",
+            "email": "guillaume.grosm11@gmail.com"
+        }
+    ],
+    "require": {
+        "gipetto/cowsay": "^1.1"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "grosg/app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
